@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    function countOccurrences(arr) {
+  let counts = {};
+
+  arr.forEach(num => {
+
+    if (counts[num]) {
+      counts[num]++;
+    } else {
+    
+      counts[num] = 1;
+    }
+  });
+
+  return counts;
+}
+
+// Example - :
+const numbers = [1,2,2,3];
+console.log(countOccurrences(numbers));
+
+const numbers1 = [9,9,9,99];
+console.log(countOccurrences(numbers1));
+
+const numbers2 = [4,3,2,1];
+console.log(countOccurrences(numbers2));
+
+
+</script>
+</body>
+</html>
